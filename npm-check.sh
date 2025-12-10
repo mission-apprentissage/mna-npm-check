@@ -59,7 +59,7 @@ abort() {
 
 download_compromised_packages_list() {
 
-  local readonly compromised_packages_url="https://raw.githubusercontent.com/Cobenian/shai-hulud-detect/672c7afd14c1748cb0328cd84f9a798cc401b899/compromised-packages.txt"
+  local readonly compromised_packages_url="https://raw.githubusercontent.com/Cobenian/shai-hulud-detect/refs/heads/main/compromised-packages.txt"
 
   if ! command -v curl &> /dev/null; then
     eexit "Error: curl is missing !"
